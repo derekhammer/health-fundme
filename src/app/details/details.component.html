@@ -1,3 +1,9 @@
-<p>
-  details works!
-</p>
+<div>
+  <h3>{{(projectToDisplay | async)?.title}}</h3>
+  <h4>{{(projectToDisplay | async)?.currentFunds}}</h4>
+  <ul>
+    <li>{{(projectToDisplay | async)?.totalFunds}}</li>
+    <li>{{(projectToDisplay | async)?.description}}</li>
+    <li>{{(projectToDisplay | async)?.contributors}}</li>
+  </ul>
+</div>

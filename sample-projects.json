@@ -1,0 +1,17 @@
+{
+  "projects": [{
+    "title": "Derek's bone spurs",
+    "description": "Derek has bone spurs in his wrist from petting too many good doggo's",
+    "currentFunds": 12,
+    "targetFunds": 10000,
+    "contributors": "Jesus",
+    "id": "1"
+  }, {
+    "title": "Wrist surgery",
+    "description": "Eliot Has destroyed his muscles in his wrist from petting too many dogs",
+    "currentFunds": 4000,
+    "targetFunds": 52,
+    "contributors": "James Hanley, Curt Caldwel, Brian",
+    "id": "2"
+  }]
+}

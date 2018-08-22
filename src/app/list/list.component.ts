@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../models/project.model';
 import { Router } from '@angular/router';
 import { ProjectService } from '../project.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-list',
@@ -11,13 +12,17 @@ import { ProjectService } from '../project.service';
 })
 export class ListComponent implements OnInit {
 
+  report(){
+    console.log(this.projects);
+  }
+
+  projects: FirebaseListObservable<any[]>;
   constructor(private router: Router, private projectService: ProjectService){}
  ngOnInit(){
-   this.projects = this.projectService.getProjects()
+   this.projects = this.projectService.getProjects();
  }
-  projects: Project[];
 
-  goToDetailPage(clickedProject: Project) {
-       this.router.navigate(['projects', clickedProject.id]);
-    }
+  goToDetailPage(clickedProject) {
+    this.router.navigate(['projects', clickedProject.$key]);
+  }
 }
