@@ -1,9 +1,8 @@
 <div class="row">
-  <p (click)="report()">CLICK TO LOG</p>
+  <!-- <p (click)="report()">CLICK TO LOG</p> -->
   <ul *ngFor="let project of projects | async" (click)="goToDetailPage(project)" >
     <li><h3>{{project.title}}</h3></li>
-    <li>Current funds: {{project.currentFunds}}</li>
-    <li>Target funds: {{project.targetFunds}}</li>
-    <li>{{project.$key}}</li>
+    <li>Current funds: ${{project.currentFunds}}</li>
+    <li>Target funds: ${{project.targetFunds}}</li>
   </ul>
 </div>

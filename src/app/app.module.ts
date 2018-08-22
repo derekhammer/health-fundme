@@ -13,6 +13,7 @@ import { ListComponent } from './list/list.component';
 import { DetailsComponent } from './details/details.component';
 import { AdminComponent } from './admin/admin.component';
 import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     ListComponent,
     DetailsComponent,
     AdminComponent,
-    CreateComponent
+    CreateComponent,
+    EditComponent
   ],
   imports: [
     FormsModule,

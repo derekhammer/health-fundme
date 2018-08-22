@@ -1,9 +1,9 @@
 <div>
   <h3>{{(projectToDisplay | async)?.title}}</h3>
-  <h4>{{(projectToDisplay | async)?.currentFunds}}</h4>
+  <h4>Current funding: ${{(projectToDisplay | async)?.currentFunds}}</h4>
   <ul>
-    <li>{{(projectToDisplay | async)?.totalFunds}}</li>
+    <li>Target funding goal: ${{(projectToDisplay | async)?.targetFunds}}</li>
     <li>{{(projectToDisplay | async)?.description}}</li>
-    <li>{{(projectToDisplay | async)?.contributors}}</li>
+    <li>People who care: {{(projectToDisplay | async)?.contributors}}</li>
   </ul>
 </div>
